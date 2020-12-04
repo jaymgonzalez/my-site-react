@@ -10,7 +10,7 @@ const listItems = projects.map((item, i) =>
         <div className="p-8">
           <div className="shadow-xl rounded-lg">
             <a href={item.project_link}>
-              <div className="hover:bg-indigo-600 h-64 bg-indigo-200 bg-cover bg-center rounded-t-lg flex items-center justify-center text-gray-700 hover:text-gray-200">
+              <div className="hover:bg-blue-600 h-64 bg-blue-200 bg-cover bg-center rounded-t-lg flex items-center justify-center text-blue-700 hover:text-gray-200">
                 <p className="tracking-tight font-extrabold text-4xl text-center p-1">{item.title}</p>
                 <p></p></div>
             </a>
@@ -20,7 +20,7 @@ const listItems = projects.map((item, i) =>
               </div>
               <div className="py-8">
                 <p className="text-sm text-gray-600"><strong>From</strong> {item.author}</p>
-                <p className="mt-6 text-indigo-700 text-justify">{item.description}</p>
+                <p className="mt-6 text-gray-700 text-justify">{item.description}</p>
                 <div className="flex items-center justify-center flex-wrap px-1 pt-8 pb-2">
                   {item.tags.map((tag, i) =>
                     <span key={i + 100} className="cursor-default uppercase tracking-wide inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">{`#${tag}`}</span>
@@ -42,7 +42,7 @@ const listItems = projects.map((item, i) =>
 
 const CardComponent = () => {
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4">
+    <div className="sm:py-10 grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4">
       { listItems}
     </div>
 

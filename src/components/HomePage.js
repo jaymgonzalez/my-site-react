@@ -5,9 +5,9 @@ import React from 'react'
 const HomePage = () => {
   return (
     <>
-      <div className="bg-hero-picture w-full text-justify relative h-auto shadow-lg rounded-b-lg">
-        <p className="font-bold text-2xl sm:text-5xl text-center text-gray-100 py-10">
-          Hi, Thanks for coming to my site, appreciated! 🙋‍♂️
+      <div className="bg-hero-img w-full text-justify relative h-80 shadow-lg rounded-b-lg">
+        <p className="select-none text-3xl sm:text-6xl text-center text-gray-50 py-28 tracking-tight font-extrabold">
+          Welcome to my portfolio site
         </p>
       </div>
       <div className="text-gray-700 m-auto max-w-screen-md sm:pt-10">
@@ -15,10 +15,10 @@ const HomePage = () => {
           This is a portfolio site where I display past and current projects, I give information about how to contact me, will post my e-CV and one day y'all will see epidodes of my vlog 🎬
         </p>
         <p className="font-bold sm:text-xl content-center m-10">
-          If you want to know what I'm working on please click <a className="text-indigo-400 hover:text-gray-400 italic" href="#projects">here</a> or the projects tab
+          If you want to know what I'm working on please click <a className="text-blue-400 hover:text-gray-400 italic" href="/projects">here</a> or the projects tab
         </p>
         <p className="font-bold sm:text-xl content-center m-10">
-          To contact me, go and fill up the form clicking <a className="text-indigo-400 hover:text-gray-400 italic" href="#contact">here</a> or you can follow me on social media on the buttons bellow
+          To contact me, go and fill up the form clicking <a className="text-blue-400 hover:text-gray-400 italic" href="/contact">here</a> or you can follow me on social media on the buttons bellow
         </p>
         <p className="font-bold text-xl sm:text-2xl text-center my-20">
           🚧 Site under construction wait a bit longer than expected🚧

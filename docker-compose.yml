@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
 
-  my-site:
-    container_name: my-site
+  front:
+    container_name: front
     build:
       context: .
       dockerfile: Dockerfile
