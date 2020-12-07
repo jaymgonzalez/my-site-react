@@ -4,7 +4,7 @@ import img from '../img/JMG.png'
 const CVPage = () => {
   return (
     <div>
-      <img src={img} alt="My CV" />
+      <img className="mx-auto" src={img} alt="My CV" />
     </div>
   )
 }

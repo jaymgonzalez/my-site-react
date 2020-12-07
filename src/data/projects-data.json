@@ -38,8 +38,8 @@
     },
     {
       "title": "Image Search App with Tailwind",
-      "github_link": "https://github.com/liteljaime/course-lookup-app",
-      "project_link": "Address to check the work",
+      "github_link": "https://github.com/liteljaime/image-serach-tailwind",
+      "project_link": "https://img-project.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
       "description": "Image search App getting information from API in pixabay searching keywords against tags at the main site where all the pictures are stored.",
       "tags": [
@@ -82,6 +82,18 @@
         "Javascript",
         "Game",
         "HTML"
+      ]
+    },
+    {
+      "title": "Landing page for QR menu",
+      "github_link": "https://github.com/liteljaime/restaurant-covid-menu",
+      "project_link": "https://landing.jaymgonzalez.com",
+      "author": "Jay M Gonzalez",
+      "description": "Landing page created to test the viability of a business idea. Create menus for restaurants and accept payments to reduce human interaction during covid pandemic",
+      "tags": [
+        "indie hacker",
+        "AlpineJS",
+        "Tailwind"
       ]
     }
   ]
