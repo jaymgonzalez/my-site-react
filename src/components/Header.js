@@ -39,7 +39,7 @@ const Header = () => {
         </div>
         <div className="block lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            className="select-none cursor-pointer flex items-center p-2 border-2 rounded text-blue-600 border-blue-600 hover:text-gray-100 hover:border-gray-100"
+            className="h-8 select-none cursor-pointer flex items-center p-2 border-2 rounded text-blue-600 border-blue-600 hover:text-gray-100 hover:border-gray-100"
             onClick={() => setIsOpen(!isOpen)}
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
