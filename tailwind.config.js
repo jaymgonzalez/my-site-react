@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: theme => ({
         'hero-img': "url('img/hero-picture.png')",
       })
+    },
+    inset: {
+      lefty: '49.8%'
     }
   },
   variants: {
