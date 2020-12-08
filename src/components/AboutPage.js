@@ -27,8 +27,8 @@ const items = [
     content: 'content about this item',
   },
   {
-    title: 'I was born',
-    year: '1986',
+    title: 'My first kiss',
+    year: '2000',
     content: 'content about this item',
   },
 ]
@@ -39,7 +39,7 @@ const listItems = items.map((item, i) =>
     <div className={`my-80 relative flex h-15 float-${i % 2 === 0 ? 'right' : 'left'} justify-between clear-both w-1/2`}
       dir={`${i % 2 === 0 ? 'ltr' : 'rtl'}`}>
       <div className="box-border absolute h-6 w-6 rounded-full border-white border-2 bg-blue-200 mt-2 z-50 -m-3"></div>
-      <div className="w-11/12 mx-auto px-4">
+      <div className="w-11/12 mx-auto px-4 text-gray-700">
         <h3 className="my-1 text-2xl font-extrabold tracking-tight">
           {item.title}
         </h3>
@@ -57,7 +57,7 @@ const listItems = items.map((item, i) =>
 const AboutPage = () => {
   return (
     <>
-      <div className="w-full my-20 text-5xl text-center font-extrabold tracking-tight capitalize">
+      <div className="w-full my-20 text-3xl text-center font-extrabold tracking-tight capitalize text-gray-700">
         scroll down to know more about me
     </div>
       <div className="mx-auto relative overflow-hidden m-10 p-10 w-5/6">

@@ -15,7 +15,7 @@
     {
       "title": "LinkedIn Bot",
       "github_link": "https://github.com/liteljaime/linkedin-bot",
-      "project_link": "Address to check the work",
+      "project_link": "",
       "author": "Jay M Gonzalez",
       "description": "Project where I developed a script to make automatic connection request and write a message like a human would do to make it less detectable for anti bots on the linkedIn search connection page",
       "tags": [
@@ -27,7 +27,7 @@
     {
       "title": "Containerize a React App",
       "github_link": "https://github.com/liteljaime/course-lookup-app",
-      "project_link": "Address to check the work",
+      "project_link": "",
       "author": "Jay M Gonzalez",
       "description": "I created this project to go with the article I wrote about 'How to Containerize a React App with docker-compose' and let people use the files in the project",
       "tags": [
@@ -74,8 +74,8 @@
     },
     {
       "title": "Pokemon Memory Game",
-      "github_link": "https://jaymgonzalez.com/projects/memory-game/index.html",
-      "project_link": "/projects/memory-game/index.html",
+      "github_link": "https://github.com/liteljaime/pokemon-memory-game",
+      "project_link": "https://pokemon.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
       "description": "Little memory game I created resembling Pokemon balls.",
       "tags": [

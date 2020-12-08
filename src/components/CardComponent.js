@@ -10,7 +10,7 @@ const listItems = projects.map((item, i) =>
         <div className="p-8">
           <div className="shadow-xl rounded-lg">
             <a href={item.project_link}>
-              <div className="hover:bg-blue-600 h-64 bg-blue-200 bg-cover bg-center rounded-t-lg flex items-center justify-center text-blue-700 hover:text-gray-200">
+              <div className={`${item.project_link.length > 0 ? 'hover:bg-blue-600 hover:text-gray-200' : 'cursor-default'} h-64 bg-blue-200 bg-cover bg-center rounded-t-lg flex items-center justify-center text-blue-700`}>
                 <p className="tracking-tight font-extrabold text-4xl text-center p-1">{item.title}</p>
                 <p></p></div>
             </a>
