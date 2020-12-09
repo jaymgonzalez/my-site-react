@@ -33,10 +33,30 @@ const items = [
   },
 ]
 
+
+const callback = (entries) => {
+  entries.forEach(entry => {
+    entry.isIntersecting ? entry.target.classList.add("motion-safe:animate-fadeIn") : entry.target.classList.remove("motion-safe:animate-fadeIn")
+  });
+}
+
+const observer = new IntersectionObserver(callback)
+
+const targets = document.querySelectorAll(".item")
+
+targets.forEach(function (target) {
+  // Hide the element
+  target.classList.add("opacity-20");
+
+  // Add the element to the watcher
+  observer.observe(target);
+});
+
+
 const listItems = items.map((item, i) =>
 
   <div key={i}>
-    <div className={`my-80 relative flex h-15 ${i % 2 === 0 ? 'float-right' : 'float-left'} justify-between clear-both w-1/2`}
+    <div className={`my-80 relative flex h-15 ${i % 2 === 0 ? 'float-right' : 'float-left'} justify-between clear-both w-1/2 item`}
       dir={`${i % 2 === 0 ? 'ltr' : 'rtl'}`}>
       <div className="box-border absolute h-6 w-6 rounded-full border-white border-2 bg-blue-200 mt-2 z-50 -m-3"></div>
       <div className="w-11/12 mx-auto px-4 text-gray-700">
