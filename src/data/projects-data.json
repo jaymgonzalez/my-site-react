@@ -3,7 +3,7 @@
     {
       "title": "Course Look Up App",
       "github_link": "https://github.com/liteljaime/course-lookup-app",
-      "project_link": "Address to check the work",
+      "project_link": "https://course-app.jaymgonzalez.com",
       "author": "Jay M Gonzalez",
       "description": "This is an app I created while doing React and Flux pluralsight course",
       "tags": [
@@ -50,8 +50,8 @@
     },
     {
       "title": "Instagram like App with Firebase",
-      "github_link": "https://github.com/liteljaime/course-lookup-app",
-      "project_link": "Address to check the work",
+      "github_link": "https://github.com/liteljaime/insta-fire-app",
+      "project_link": "https://fireapp.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
       "description": "App similar to Instagram that I created with a Firebase backend",
       "tags": [
