@@ -36,7 +36,7 @@ const items = [
 const listItems = items.map((item, i) =>
 
   <div key={i}>
-    <div className={`my-80 relative flex h-15 float-${i % 2 === 0 ? 'right' : 'left'} justify-between clear-both w-1/2`}
+    <div className={`my-80 relative flex h-15 ${i % 2 === 0 ? 'float-right' : 'float-left'} justify-between clear-both w-1/2`}
       dir={`${i % 2 === 0 ? 'ltr' : 'rtl'}`}>
       <div className="box-border absolute h-6 w-6 rounded-full border-white border-2 bg-blue-200 mt-2 z-50 -m-3"></div>
       <div className="w-11/12 mx-auto px-4 text-gray-700">
@@ -46,10 +46,8 @@ const listItems = items.map((item, i) =>
         <h1 className="text-xl font-extrabold tracking-tight">
           {item.year}
         </h1>
-
       </div>
     </div>
-
   </div>
 
 )
