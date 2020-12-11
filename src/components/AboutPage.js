@@ -1,38 +1,5 @@
-import React from 'react'
-
-const items = [
-  {
-    title: 'I was born',
-    year: '1986',
-    content: 'content about this item',
-  },
-  {
-    title: 'Played with my first computer',
-    year: '1993',
-    content: 'content about this item',
-  },
-  {
-    title: 'Became season ticket holder of Real Madrid',
-    year: '1996',
-    content: 'content about this item',
-  },
-  {
-    title: 'Upgraded my first RAM memory',
-    year: '1997',
-    content: 'content about this item',
-  },
-  {
-    title: 'Started playing Half-Life',
-    year: '1999',
-    content: 'content about this item',
-  },
-  {
-    title: 'My first kiss',
-    year: '2000',
-    content: 'content about this item',
-  },
-]
-
+import React, { user } from 'react'
+import aboutMeData from '../data/about-me.json'
 
 const callback = (entries) => {
   entries.forEach(entry => {
@@ -53,7 +20,7 @@ targets.forEach(function (target) {
 });
 
 
-const listItems = items.map((item, i) =>
+const listItems = aboutMeData.items.map((item, i) =>
 
   <div key={i}>
     <div className={`my-80 relative flex h-15 ${i % 2 === 0 ? 'float-right' : 'float-left'} justify-between clear-both w-1/2 item`}
