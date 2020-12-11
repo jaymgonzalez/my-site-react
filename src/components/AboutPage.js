@@ -13,7 +13,7 @@ const targets = document.querySelectorAll(".item")
 
 targets.forEach(function (target) {
   // Hide the element
-  target.classList.add("opacity-0");
+  target.classList.add("opacity-10");
 
   // Add the element to the watcher
   observer.observe(target);
