@@ -29,6 +29,66 @@
       "title": "My first kiss",
       "year": 2000,
       "content": "content about this item'"
+    },
+    {
+      "title": "Runner-up in country-wide 5-a-side football competition",
+      "year": 2001,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Spent all my savings in a PS2",
+      "year": 2003,
+      "content": "content about this item'"
+    },
+    {
+      "title": "First year of Uni (Spain)",
+      "year": 2005,
+      "content": "content about this item'"
+    },
+    {
+      "title": "A month long trip around Europe",
+      "year": 2006,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Moved to Brighton",
+      "year": 2009,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Started Sussex Uni",
+      "year": 2010,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Published my first website",
+      "year": 2013,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Started a 3 years long world-trip",
+      "year": 2015,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Bought my first Bitcoin",
+      "year": 2016,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Started learning React",
+      "year": 2018,
+      "content": "content about this item'"
+    },
+    {
+      "title": "First job in a Tech Start-up",
+      "year": 2019,
+      "content": "content about this item'"
+    },
+    {
+      "title": "Published my first article",
+      "year": 2020,
+      "content": "content about this item'"
     }
   ]
 }
