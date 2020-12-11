@@ -4,9 +4,10 @@ services:
 
   front:
     container_name: front
-    build:
-      context: .
-      dockerfile: Dockerfile
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: mysite:latest 
     volumes:
       - '.:/app'
       - '/app/node_modules'

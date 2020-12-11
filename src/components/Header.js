@@ -49,7 +49,7 @@ const Header = () => {
         <div id="menu" className="w-full  lg:flex lg:w-auto">
           <div className="lg:flex-grow justify-items-center tracking-tight font-extrabold">
             {headerItems.map((item, i) =>
-              <NavLink key={i} to={`/${item.split(' ')[0]}`} className="lg:border-gray-100 lg:border-2 lg:rounded-lg lg:p-2 uppercase block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-gray-100 lg:mr-4 lg:hover:border-blue-600 lg:hover:bg-gray-700">
+              <NavLink key={i} to={`/${item.split(' ')[0]}`} className="lg:border-gray-100 lg:border-2 lg:rounded-lg lg:p-2 uppercase block mt-4 lg:inline-block lg:mt-0 text-blue-600 hover:text-gray-100 lg:mr-4 lg:hover:border-blue-600 lg:hover:bg-gray-700" activeClassName="lg:shadow-xl">
                 {item}
               </NavLink>
             )}

@@ -1,74 +1,57 @@
 import React from 'react'
+import { useForm } from "react-hook-form";
+
+
+const Input = ({ name, register, errors, placeholder }) => (
+  <>
+    <label className="block text-gray-700 font-bold mb-1 pr-4 pt-2 capitalize" htmlFor={name}>{name}</label>
+    <input
+      name={name}
+      ref={register}
+      placeholder={placeholder}
+      className="bg-gray-100 appearance-none border-2 border-gray-200 w-full rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-400 "
+      type="text"
+    />
+    {errors && <p className="pt-2 text-red-500 text-xs italic">
+      Please enter a valid {name}
+    </p>}
+  </>
+)
 
 const ContactPage = () => {
+
+  const { register, handleSubmit, errors } = useForm()
+
+  function onSubmit(values) {
+    console.log(values);
+  }
+
   return (
-    <div>
-      <div className="bg-indigo-400 w-full text-justify relative h-auto shadow-lg rounded-b-lg">
-        <p className="font-bold text-xl text-center py-10 text-gray-100">
-          Contact me by completing the form below or follow me on social media using the icons at the bottom
-        </p>
-      </div>
-      <form id="contact-form" className="w-full max-w-sm mx-auto py-20" nonvalidate>
-        <div className="md:flex md:items-start mb-6">
-          <div className="md:w-1/3">
-            <label
-              className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4 pt-2" for="full-name">
-              Full Name
-        </label>
-          </div>
-          <div className="md:w-2/3" x-data="{ isValid: true }">
-            <input
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 
-          text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-400"
-              name="fullname" id="fullname" type="text" placeholder="John Jones" pattern="[A-Za-z]{3,}" required />
-            <p className="pt-2 text-red-500 text-xs italic">
-              Please enter a valid name
-        </p>
-          </div>
-        </div>
-        <div className="md:flex md:items-start mb-6">
-          <div className="md:w-1/3">
-            <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pt-2 pr-4" for="email">
-              Email
-        </label>
-          </div>
-          <div className="md:w-2/3" x-data="{ isValid: true }">
-            <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 
-          text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-400"
-              name="email" id="email" type="email" placeholder="holi@gmail.com"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
-            <p className="pt-2 text-red-500 text-xs italic">
-              Please enter a valid email address
-            </p>
-          </div>
-        </div>
-        <div className="md:flex md:items-center mb-6">
-          <div className="md:w-1/3">
-            <label className="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="comment">
-              Comment
-            </label>
-          </div>
-          <div className="md:w-2/3" x-data="{ isValid: true }">
-            <textarea
-              className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight 
-              focus:outline-none focus:bg-white focus:border-indigo-400" name="comment" id="comment" cols="30" rows="10"
-            >
-            </textarea>
+
+    <form id="contact-form" className="w-full max-w-sm mx-auto py-20" onSubmit={handleSubmit(onSubmit)}>
+      <div className="mb-6">
+        <Input name="name" register={register({ required: true, pattern: /[A-Za-z ]{3,}/ })} errors={errors.name} placeholder="Pepito" />
+        <Input name="email" register={register({ required: true, pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })} errors={errors.email} placeholder="pepito@myemail.com" />
+        <div className="mb-6">
+          <label className="block text-gray-700 font-bold my-2 pr-4" htmlFor="comment">
+            Comment
+           </label>
+          <textarea
+            className="bg-gray-100 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight 
+              focus:outline-none focus:bg-white focus:border-blue-400" name="comment" cols="30" rows="10" placeholder="Write your message"
+            ref={register({ required: true })}
+          />
+          {errors.comment &&
             <p className="pt-2 text-red-500 text-xs italic">
               Please write someting on the box
             </p>
-          </div>
+          }
+          <button className="shadow mx-auto my-8 flex bg-blue-200 hover:bg-blue-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+            Contact
+         </button>
         </div>
-        <div className="md:flex md:items-center">
-          <div className="md:w-1/3"></div>
-          <div className="md:w-2/3">
-            <button className="shadow bg-indigo-400 hover:bg-indigo-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
-              Contact
-        </button>
-          </div>
-        </div>
-      </form>
-    </div>
+      </div>
+    </form>
   )
 }
 
