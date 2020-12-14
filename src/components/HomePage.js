@@ -1,6 +1,6 @@
 import React from 'react'
-
-// bg-gradient-to-r from-orange-400 via-red-500 to-pink-500
+import ListCardComponent from './ListCardComponent'
+import { projects } from '../data/projects-data.json'
 
 const HomePage = () => {
   return (
@@ -20,10 +20,22 @@ const HomePage = () => {
         <p className="font-bold sm:text-xl content-center m-10">
           To contact me, go and fill up the form clicking <a className="text-blue-400 hover:text-gray-400 italic" href="/contact">here</a> or you can follow me on social media on the buttons bellow
         </p>
-        <p className="font-bold text-xl sm:text-2xl text-center my-20">
-          🚧 Site under construction wait a bit longer than expected🚧
+
+      </div>
+      <div className="h-40 w-full bg-gradient-to-r from-cyan-300 via-teal-400 to-blue-500 shadow-lg rounded-b-lg"></div>
+      <div className="max-w-screen-sm mx-auto">
+        <p className="text-4xl text-center tracking-tight text-gray-700 font-extrabold py-10 sm:py-20">
+          Current Projects
+        </p>
+        <p className="font-bold sm:text-xl content-center px-10">
+          This is a small list of projects that I'm currently working on, if you would like to have a look at the full list please click <a className="text-blue-400 hover:text-gray-400 italic" href="/projects">here</a>
         </p>
       </div>
+
+      <div className="max-w-screen-md mx-auto sm:py-10 grid sm:grid-cols-2 grid-cols-1 gap-4">
+        < ListCardComponent projects={projects.slice(0, 2)} />
+      </div>
+
     </>
   )
 }

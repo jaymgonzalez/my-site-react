@@ -1,3 +1,6 @@
+const { lightBlue } = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./src/**/*.js', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -17,6 +20,11 @@ module.exports = {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 }
         }
+      },
+      colors: {
+        teal: colors.teal,
+        lightblue: colors.lightBlue,
+        cyan: colors.cyan
       }
     },
   },
