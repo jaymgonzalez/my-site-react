@@ -45,12 +45,6 @@ const HomePage = () => {
           About Me
         </p>
         <AboutMeList />
-        <div className="font-bold sm:text-xl text-center p-10 sm:py-20">
-          <p>
-            To see a full list of live events click <a className="text-blue-400 hover:text-gray-400 italic" href="/about"> HERE </a></p>
-          <p className="pt-10 sm:pt-20">For a recruiter ready CV click <a className="text-blue-400 hover:text-gray-400 italic" href="/cv">HERE </a>
-          </p>
-        </div>
       </div>
       <div className="h-40 w-full bg-gradient-to-r from-cyan-300 via-teal-400 to-blue-500 shadow-lg rounded-b-lg my-6 sm:my-10"></div>
       <div className="max-w-screen-sm mx-auto text-gray-700">

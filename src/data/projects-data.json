@@ -5,22 +5,10 @@
       "github_link": "https://github.com/liteljaime/course-lookup-app",
       "project_link": "https://course-app.jaymgonzalez.com",
       "author": "Jay M Gonzalez",
-      "description": "This is an app I created while doing React and Flux pluralsight course",
+      "description": "This app displays all the courses that I have completed recently. Within the app you can CRUD the courses that will affect the BD temporarily. It uses a json-server backend deployed in Heroku that will relaod every so often to the original data deployed.",
       "tags": [
         "React",
-        "Course",
-        "Flux"
-      ]
-    },
-    {
-      "title": "LinkedIn Bot",
-      "github_link": "https://github.com/liteljaime/linkedin-bot",
-      "project_link": "",
-      "author": "Jay M Gonzalez",
-      "description": "Project where I developed a script to make automatic connection request and write a message like a human would do to make it less detectable for anti bots on the linkedIn search connection page",
-      "tags": [
-        "Bot",
-        "Scripting",
+        "Courses",
         "Flux"
       ]
     },
@@ -29,7 +17,7 @@
       "github_link": "https://github.com/liteljaime/course-lookup-app",
       "project_link": "",
       "author": "Jay M Gonzalez",
-      "description": "I created this project to go with the article I wrote about 'How to Containerize a React App with docker-compose' and let people use the files in the project",
+      "description": "I created this project to go with the article I wrote about 'How to Containerize a React App with docker-compose' and let people use the files in the project or use them as a boiler plate to create their next app with React and Docker.",
       "tags": [
         "React",
         "Docker",
@@ -41,7 +29,7 @@
       "github_link": "https://github.com/liteljaime/image-serach-tailwind",
       "project_link": "https://img-project.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
-      "description": "Image search App getting information from API in pixabay searching keywords against tags at the main site where all the pictures are stored.",
+      "description": "Image search App that get information from pixabay API with a searching box that looks for keywords against tags at the main site where all the pictures are stored. The CSS framework used on this project is Tailwind.",
       "tags": [
         "React",
         "Tailwind",
@@ -53,11 +41,23 @@
       "github_link": "https://github.com/liteljaime/insta-fire-app",
       "project_link": "https://fireapp.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
-      "description": "App similar to Instagram that I created with a Firebase backend",
+      "description": "App similar to Instagram that I created with a Firebase backend where you can updaload your pictures. At the moment its open for everyone to try so if you go in you could upload any picture and it will get save for the next visits.",
       "tags": [
         "React",
         "Firebase",
         "Hooks"
+      ]
+    },
+    {
+      "title": "Backend for courses look up app",
+      "github_link": "https://github.com/liteljaime/json-server-api-heroku",
+      "project_link": "https://course-pluralsight-api.herokuapp.com/",
+      "author": "Jay M Gonzalez",
+      "description": "Backend to add information and functionality to the courses look up app where I deployed the DB in Heroku with the package json-server, this module is usually utilize to mock API behaviour but it can be deployed as proven in this project.",
+      "tags": [
+        "indie hacker",
+        "AlpineJS",
+        "Tailwind"
       ]
     },
     {
@@ -82,6 +82,18 @@
         "Javascript",
         "Game",
         "HTML"
+      ]
+    },
+    {
+      "title": "LinkedIn Bot",
+      "github_link": "https://github.com/liteljaime/linkedin-bot",
+      "project_link": "",
+      "author": "Jay M Gonzalez",
+      "description": "Project where I developed a script to make automatic connection request and write a message like a human would do to make it less detectable for anti bots on the linkedIn search connection page",
+      "tags": [
+        "Bot",
+        "Scripting",
+        "Scraping"
       ]
     },
     {
