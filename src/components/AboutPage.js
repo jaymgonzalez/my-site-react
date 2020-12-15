@@ -36,12 +36,12 @@ const AboutPage = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 17l-4 4m0 0l-4-4m4 4V3" />
         </svg>
       </div>
-      <div className="mx-auto relative overflow-hidden m-10 p-10 w-5/6 select-none">
+      <div className="mx-auto relative overflow-hidden m-10 py-10 w-5/6 select-none">
         <ListItemAbout />
         <div className="absolute left-lefty top-0 w-1 h-full bg-gray-200 z-10"></div>
       </div>
       <div className="w-full py-10">
-        <button onClick={scrollToTop} className="mb-10 flex mx-auto p-6 bg-lightblue-800 rounded-3xl text-cyan-200 font-extrabold tracking-tight capitalize hover:bg-green-500 hover:text-gray-800">Scroll to the top</button>
+        <button onClick={scrollToTop} className="mb-10 flex mx-auto p-6 bg-lightblue-800 rounded-3xl text-cyan-200 font-extrabold tracking-tight capitalize hover:bg-green-500 hover:text-gray-50">Scroll to the top</button>
       </div>
     </>
   )
