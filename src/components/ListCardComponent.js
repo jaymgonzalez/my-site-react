@@ -10,7 +10,7 @@ const ListCardComponent = (props) =>
           <div className="p-8">
             <div className="shadow-xl rounded-lg">
               <a href={item.project_link}>
-                <div className={`${item.project_link.length > 0 ? 'hover:from-teal-400 hover:to-pink-400 hover:text-gray-200' : 'cursor-default'} h-64 bg-gradient-to-r from-blue-500 to-teal-400 bg-cover bg-center rounded-t-lg flex items-center justify-center text-gray-800`}>
+                <div className={`${item.project_link.length > 0 ? 'hover:from-lightblue-800 hover:to-pink-600 hover:text-gray-50' : 'cursor-default'} h-64 bg-gradient-to-r from-cyan-200 to-green-500 bg-cover bg-center rounded-t-lg flex items-center justify-center text-lightblue-800`}>
                   <p className="tracking-tight font-extrabold text-4xl text-center p-1">{item.title}</p>
                   <p></p></div>
               </a>
@@ -20,15 +20,15 @@ const ListCardComponent = (props) =>
                 </div>
                 <div className="py-8">
                   <p className="text-sm text-gray-600"><strong className="font-extrabold">From</strong> {item.author}</p>
-                  <p className="mt-6 text-gray-700 text-justify font-semibold leading-snug tracking-tight">{item.description}</p>
+                  <p className="mt-6 text-gray-800 text-justify font-semibold leading-snug tracking-tight">{item.description}</p>
                   <div className="flex items-center justify-center flex-wrap px-1 pt-8 pb-2">
                     {item.tags.map((tag, i) =>
-                      <span key={i + 100} className="cursor-default uppercase tracking-wide inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">{`#${tag}`}</span>
+                      <span key={i + 100} className="cursor-default uppercase tracking-wide inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-800 mr-2 mb-2">{`#${tag}`}</span>
                     )}
                   </div>
                   {item.github_link.length > 0 &&
                     <a className="flex" href={item.github_link}>
-                      <p className="flex flex-col mx-auto text-gray-700 text-xs mt-4 uppercase font-bold">GitHub repo</p>
+                      <p className="flex flex-col mx-auto text-gray-800 text-xs mt-4 uppercase font-bold">GitHub repo</p>
                     </a>
                   }
                   <p></p></div>

@@ -30,7 +30,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <div className="w-full my-20 text-3xl text-center font-extrabold tracking-tight capitalize text-gray-700 select-none">
+      <div className="w-full my-20 text-3xl text-center font-extrabold tracking-tight capitalize text-gray-800 select-none">
         scroll down to know more about me
       </div>
       <div className="mx-auto relative overflow-hidden m-10 p-10 w-5/6 select-none">
@@ -38,7 +38,7 @@ const AboutPage = () => {
         <div className="absolute left-lefty top-0 w-1 h-full bg-gray-200 z-10"></div>
       </div>
       <div className="w-full py-10">
-        <button onClick={scrollToTop} className="flex mx-auto p-6 bg-blue-200 rounded-3xl text-gray-700 font-extrabold tracking-tight capitalize">Scroll to the top</button>
+        <button onClick={scrollToTop} className="flex mx-auto p-6 bg-cyan-200 rounded-3xl text-gray-800 font-extrabold tracking-tight capitalize">Scroll to the top</button>
       </div>
     </>
   )

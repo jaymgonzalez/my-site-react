@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'hero-img': "url('img/hero-picture.png')",
+        'hero-img': "url('img/hero-picture.webp')",
       }),
       inset: {
         lefty: '49.8%'
@@ -24,7 +24,9 @@ module.exports = {
       colors: {
         teal: colors.teal,
         lightblue: colors.lightBlue,
-        cyan: colors.cyan
+        cyan: colors.cyan,
+        orange: colors.orange,
+        emerald: colors.emerald
       }
     },
   },

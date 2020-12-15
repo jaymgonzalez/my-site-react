@@ -37,8 +37,8 @@ const icons = [
 
 const itemsList = icons.map((icon, i) =>
   <div key={i} className="w-36 py-4">
-    <svg className="mx-auto h-16 w-16 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} dangerouslySetInnerHTML={{ __html: icon.path }}></svg>
-    <h2 className="text-gray-700 text-center tracking-tight font-bold p-2">
+    <svg className="mx-auto h-16 w-16 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} dangerouslySetInnerHTML={{ __html: icon.path }}></svg>
+    <h2 className="text-gray-800 text-center tracking-tight font-bold p-2">
       {icon.desciption}
     </h2>
   </div>
@@ -57,10 +57,10 @@ const AboutMeList = () => {
         <Link to="/cv">
           <div className="w-36 h-36 relative">
             <div class="absolute inset-0 transform  hover:scale-125 transition duration-300 py-4">
-              <svg className="mx-auto h-16 w-16 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="mx-auto h-16 w-16 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <h2 className="text-gray-700 text-center tracking-tight font-bold">
+              <h2 className="text-gray-800 text-center tracking-tight font-bold">
                 Have a Look at my CV
               </h2>
             </div>
@@ -69,10 +69,10 @@ const AboutMeList = () => {
         <Link to="/about">
           <div className="w-36 relative">
             <div class="absolute inset-0 transform  hover:scale-125 transition duration-300 py-4">
-              <svg className="mx-auto h-16 w-16 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="mx-auto h-16 w-16 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
               </svg>
-              <h2 className="text-gray-700 text-center tracking-tight font-bold">
+              <h2 className="text-gray-800 text-center tracking-tight font-bold">
                 Have a Look at my Personal Story
               </h2>
             </div>
