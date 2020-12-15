@@ -9,8 +9,8 @@ const Input = ({ name, register, errors, placeholder }) => (
       name={name}
       ref={register}
       placeholder={placeholder}
-      className="bg-gray-50 appearance-none border-2 border-gray-200 w-full rounded py-2 px-4 text-gray-800 leading-tight focus:outline-none focus:bg-white focus:border-blue-400 "
-      type="text"
+      className={`bg-gray-50 appearance-none border-2 w-full rounded py-2 px-4 text-gray-800 leading-tight focus:outline-none focus:bg-white ${errors ? "border-red-500" : "border-gray-200"} focus:border-lightblue-800 "
+      type="text`}
     />
     {errors && <p className="pt-2 text-red-500 text-xs italic">
       Please enter a valid {name}
@@ -20,7 +20,7 @@ const Input = ({ name, register, errors, placeholder }) => (
 
 const ContactPage = () => {
 
-  const { register, handleSubmit, errors } = useForm()
+  const { register, handleSubmit, errors } = useForm({ mode: 'onBlur', })
 
   function onSubmit(values) {
     console.log(values);
@@ -37,8 +37,8 @@ const ContactPage = () => {
             Comment
            </label>
           <textarea
-            className="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-800 leading-tight 
-              focus:outline-none focus:bg-white focus:border-blue-400" name="comment" cols="30" rows="10" placeholder="Write your message"
+            className={`bg-gray-50 appearance-none border-2 ${errors.comment ? "border-red-500" : "border-gray-200"} rounded w-full py-2 px-4 text-gray-800 leading-tight 
+              focus:outline-none focus:bg-white focus:border-lightblue-800`} name="comment" cols="30" rows="10" placeholder="Write your message"
             ref={register({ required: true })}
           />
           {errors.comment &&
@@ -46,6 +46,7 @@ const ContactPage = () => {
               Please write someting on the box
             </p>
           }
+
           <button className="mx-auto my-16 shadow-2xl hover:text-gray-50 flex bg-lightblue-800 hover:bg-green-500 focus:shadow-outline focus:outline-none text-cyan-200 text-xl font-extrabold py-3 px-6 rounded-xl" type="submit">
             Contact
          </button>
