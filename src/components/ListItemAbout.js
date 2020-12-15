@@ -6,7 +6,7 @@ const ListItemAbout = () => {
   return (
     aboutMeData.items.map((item, i) =>
       <div key={i}>
-        <div className={`my-60 relative flex h-15 ${i % 2 === 0 ? 'float-right' : 'float-left'} justify-between clear-both w-1/2`}
+        <div className={`my-32 relative flex h-15 ${i % 2 === 0 ? 'float-right' : 'float-left'} justify-between clear-both w-1/2`}
           dir={`${i % 2 === 0 ? 'ltr' : 'rtl'}`}>
           <div className="box-border absolute h-6 w-6 rounded-full border-white border-2 bg-cyan-200 mt-2 z-50 -m-3"></div>
           <div className="w-11/12 mx-auto px-4 text-gray-800 item">
