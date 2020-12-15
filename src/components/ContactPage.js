@@ -20,15 +20,38 @@ const Input = ({ name, register, errors, placeholder }) => (
 
 const ContactPage = () => {
 
-  const { register, handleSubmit, errors } = useForm({ mode: 'onBlur', })
+  const { register, handleSubmit, errors } = useForm({
+    mode: 'onBlur',
+    reValidateMode: 'onChange',
+  })
 
-  function onSubmit(values) {
-    console.log(values);
+  const onSubmit = (data, e) => {
+
+    const formURL = "https://b2k49caqfe.execute-api.us-east-1.amazonaws.com/Prod/submitForm"
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', formURL, true);
+    xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+    // Send the collected data as JSON
+    xhr.send(JSON.stringify(data));
+
+    xhr.onloadend = response => {
+      if (response.target.status === 200) {
+        e.target.reset()
+        console.log('worked!')
+      } else {
+        console.log('didnt worked!')
+      }
+    }
   }
+
+
+  const onError = (errors, e) => console.log(errors, e.target);
 
   return (
 
-    <form id="contact-form" className="w-full max-w-sm mx-auto py-20 px-2" onSubmit={handleSubmit(onSubmit)}>
+    <form id="contact-form" className="w-full max-w-sm mx-auto py-20 px-2" onSubmit={handleSubmit(onSubmit, onError)}>
       <div className="mb-6">
         <Input name="name" register={register({ required: true, pattern: /[A-Za-z ]{3,}/ })} errors={errors.name} placeholder="Pepito" />
         <Input name="email" register={register({ required: true, pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })} errors={errors.email} placeholder="pepito@myemail.com" />
