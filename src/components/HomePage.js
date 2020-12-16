@@ -32,7 +32,7 @@ const HomePage = () => {
           Current Projects
         </p>
         <p className="font-bold sm:text-xl text-justify px-10">
-          This is a small list of projects that I'm currently working on, if you would like to have a look at the full list please click <a className="text-pink-600 hover:text-lightblue-800 italic" href="/projects">HERE </a> to go to the Projects tab
+          This is a small list of projects that I'm currently working on, if you would like to have a look at the full list please click to go to the <a className="text-pink-600 hover:text-lightblue-800 italic" href="/projects">Projects tab</a>
         </p>
       </div>
 
