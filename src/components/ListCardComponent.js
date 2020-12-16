@@ -28,7 +28,7 @@ const ListCardComponent = (props) =>
                   </div>
                   {item.github_link.length > 0 &&
                     <a className="flex" href={item.github_link}>
-                      <p className="flex flex-col mx-auto text-gray-800 text-xs mt-4 uppercase font-bold">GitHub repo</p>
+                      <p className="flex flex-col mx-auto text-gray-800 text-xs mt-4 uppercase font-bold hover:text-pink-600">GitHub repo</p>
                     </a>
                   }
                   <p></p></div>
