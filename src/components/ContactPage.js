@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
+import ModalFormSubmission from './ModalFormSubmission';
 
 
 const Input = ({ name, register, errors, placeholder }) => (
@@ -20,6 +21,8 @@ const Input = ({ name, register, errors, placeholder }) => (
 
 const ContactPage = () => {
 
+  const [submissionState, setSubmissionState] = useState('off')
+
   const { register, handleSubmit, errors } = useForm({
     mode: 'onBlur',
     reValidateMode: 'onChange',
@@ -27,31 +30,27 @@ const ContactPage = () => {
 
   const onSubmit = (data, e) => {
 
+    setSubmissionState('loading')
     const formURL = "https://b2k49caqfe.execute-api.us-east-1.amazonaws.com/Prod/submitForm"
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', formURL, true);
-    xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
-    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
-    // Send the collected data as JSON
-    xhr.send(JSON.stringify(data));
-
-    xhr.onloadend = response => {
-      if (response.target.status === 200) {
+    fetch(formURL, {
+      method: 'post',
+      body: JSON.stringify(data)
+    })
+      .then(() => {
         e.target.reset()
-        console.log('worked!')
-      } else {
-        console.log('didnt worked!')
-      }
-    }
+        setSubmissionState('successful')
+      })
+      .catch(() => {
+        setSubmissionState('unsuccessful')
+      })
+    e.preventDefault()
+    setTimeout(() => setSubmissionState('off'), 2500)
   }
-
-
-  const onError = (errors, e) => console.log(errors, e.target);
 
   return (
 
-    <form id="contact-form" className="w-full max-w-sm mx-auto py-20 px-2" onSubmit={handleSubmit(onSubmit, onError)}>
+    <form id="contact-form" className="w-full max-w-sm mx-auto py-20 px-2" onSubmit={handleSubmit(onSubmit)}>
       <div className="mb-6">
         <Input name="name" register={register({ required: true, pattern: /[A-Za-z ]{3,}/ })} errors={errors.name} placeholder="Pepito" />
         <Input name="email" register={register({ required: true, pattern: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })} errors={errors.email} placeholder="pepito@myemail.com" />
@@ -69,10 +68,10 @@ const ContactPage = () => {
               Please write someting on the box
             </p>
           }
-
           <button className="mx-auto my-16 shadow-2xl hover:text-gray-50 flex bg-lightblue-800 hover:bg-green-500 focus:shadow-outline focus:outline-none text-cyan-200 text-xl font-extrabold py-3 px-6 rounded-xl" type="submit">
             Contact
          </button>
+          <ModalFormSubmission state={submissionState} />
         </div>
       </div>
     </form>
