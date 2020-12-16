@@ -40,12 +40,13 @@ const ContactPage = () => {
       .then(() => {
         e.target.reset()
         setSubmissionState('successful')
+        setTimeout(() => setSubmissionState('off'), 2500)
       })
       .catch(() => {
         setSubmissionState('unsuccessful')
+        setTimeout(() => setSubmissionState('off'), 2500)
       })
     e.preventDefault()
-    setTimeout(() => setSubmissionState('off'), 2500)
   }
 
   return (
