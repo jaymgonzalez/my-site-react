@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AboutPage from './AboutPage'
 
 const icons = [
   {
@@ -66,7 +67,7 @@ const AboutMeList = () => {
             </div>
           </div>
         </Link>
-        <Link to="/about">
+        <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
           <div className="w-36 relative">
             <div class="absolute inset-0 transform  hover:scale-125 transition duration-300 py-4">
               <svg className="mx-auto h-16 w-16 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
