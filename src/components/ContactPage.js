@@ -8,6 +8,7 @@ const Input = ({ name, register, errors, placeholder }) => (
     <label className="block text-gray-800 font-bold mb-1 pr-4 pt-2 capitalize" htmlFor={name}>{name}</label>
     <input
       name={name}
+      id={name}
       ref={register}
       placeholder={placeholder}
       className={`bg-gray-50 appearance-none border-2 w-full rounded py-2 px-4 text-gray-800 leading-tight focus:outline-none focus:bg-white ${errors ? "border-red-500" : "border-gray-200"} focus:border-lightblue-800 "
@@ -61,7 +62,7 @@ const ContactPage = () => {
            </label>
           <textarea
             className={`bg-gray-50 appearance-none border-2 ${errors.comment ? "border-red-500" : "border-gray-200"} rounded w-full py-2 px-4 text-gray-800 leading-tight 
-              focus:outline-none focus:bg-white focus:border-lightblue-800`} name="comment" cols="30" rows="10" placeholder="Write your message"
+              focus:outline-none focus:bg-white focus:border-lightblue-800`} id="comment" name="comment" cols="30" rows="10" placeholder="Write your message"
             ref={register({ required: true })}
           />
           {errors.comment &&
