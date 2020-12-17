@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   front:
-    container_name: front
+    container_name: front-tailwind
     # build:
     #   context: .
     #   dockerfile: Dockerfile
