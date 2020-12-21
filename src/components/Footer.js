@@ -2,6 +2,8 @@ import React from 'react'
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 import { IconContext } from 'react-icons/lib'
 
+const d = new Date()
+
 const Footer = () => {
   return (
     <div>
@@ -23,7 +25,7 @@ const Footer = () => {
               </a>
             </IconContext.Provider>
           </div>
-          <h5 className="text-xs text-center mt-20 pb-4">© 2020 JMG Inc. All Rights Reserved</h5>
+          <h5 className="text-xs text-center mt-20 pb-4">© {d.getFullYear()} JMG Inc. All Rights Reserved</h5>
         </div>
       </footer>
     </div >

@@ -7,8 +7,8 @@ import AboutMeList from './AboutMeList'
 const HomePage = () => {
   return (
     <>
-      <div className="bg-hero-img w-full text-justify relative h-80 shadow-lg rounded-b-lg">
-        <p className="select-none text-3xl sm:text-6xl text-center text-gray-800 py-28 tracking-tight font-extrabold">
+      <div className="bg-hero-img bg-green-500 w-full text-justify relative h-80 shadow-lg rounded-b-lg opacity-90">
+        <p className="select-none text-3xl sm:text-6xl text-center text-gray-50 py-28 tracking-tight font-extrabold">
           Welcome to my portfolio site
         </p>
       </div>
@@ -26,36 +26,7 @@ const HomePage = () => {
           Bellow are a few examples of my work and ways to contact.
         </p>
       </div>
-      <svg
-        className="rounded-b-lg"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none"
-        viewBox="0 0 1280 245"
-      >
-        <g fill="none" mask='url("#SvgjsMask1040")'>
-          <path
-            fill="rgba(34, 197, 94, 1)"
-            d="M0 104c19.2-9.8 57.6-41.8 96-49 38.4-7.2 57.6 23.2 96 13s57.6-73 96-64 57.6 101 96 109 57.6-67.6 96-69c38.4-1.4 57.6 62.4 96 62 38.4-.4 57.6-56 96-64s57.6 31.4 96 24c38.4-7.4 57.6-65.2 96-61 38.4 4.2 57.6 81 96 82s57.6-81.6 96-77c38.4 4.6 57.6 94 96 100s57.6-62.4 96-70c38.4-7.6 57.6 37.6 96 32 38.4-5.6 57.6-68.8 96-60 38.4 8.8 57.6 97.6 96 104 38.4 6.4 57.6-64.2 96-72 38.4-7.8 57.6 30 96 33s57.6-26 96-18 76.8 46.4 96 58v128H0z"
-          ></path>
-          <path
-            fill="rgba(7, 89, 133, 1)"
-            d="M0 142c32 15 96 67 160 75s96-30.8 160-35c64-4.2 96 24.2 160 14s96-64 160-65 96 55.6 160 60c64 4.4 96-40.8 160-38 64 2.8 96 51.4 160 52 64 .6 96-48 160-49s96 48.2 160 44c64-4.2 96-66.4 160-65 64 1.4 96 66 160 72s128-33.6 160-42v80H0z"
-          ></path>
-        </g>
-        <defs>
-          <mask id="SvgjsMask1040">
-            <path fill="#fff" d="M0 0H1920V245H0z"></path>
-          </mask>
-        </defs>
-      </svg>
-      <div className="max-w-screen-sm mx-auto text-gray-800">
-        <p className="text-4xl text-center tracking-tight font-extrabold py-10 sm:py-20">
-          Current Projects
-        </p>
-        <p className="font-bold sm:text-xl text-justify px-10">
-          This is a small list of projects that I'm currently working on, if you would like to have a look at the full list please click to go to the <a className="text-pink-600 hover:text-lightblue-800 italic" href="/projects"> Projects Tab</a>
-        </p>
-      </div>
+      <div className="bg-divider-img h-40"></div>
 
       <div className="max-w-screen-md mx-auto sm:py-10 grid sm:grid-cols-2 grid-cols-1 gap-4">
         < ListCardComponent projects={projects.slice(0, 4)} />
