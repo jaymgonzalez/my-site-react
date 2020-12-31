@@ -12,16 +12,17 @@ const Footer = () => {
           <h4 className="text-center text-xl sm:text-3xl tracking-tight font-extrabold">Connect with me in the links below</h4>
           <div className="flex mt-10 sm:mt-16 justify-center items-center space-x-5">
             <IconContext.Provider value={{
-              className: "bg-white rounded-lg p-1 hover:bg-cyan-200 shadow-lg focus:outline-none inline-block text-center"
+              className: "bg-white rounded-lg p-1 hover:bg-cyan-200 shadow-lg focus:outline-none inline-block text-center",
+              size: 40
             }}>
               <a href="http://www.twitter.com/jaymgon" target="_blank" rel="noreferrer">
-                <FiTwitter size={40} className="text-blue-400" />
+                <FiTwitter className="text-blue-400" />
               </a>
               <a href="http://www.linkedin.com/in/jay-m-gonzalez-7587ab43" target="_blank" rel="noreferrer">
-                <FiLinkedin size={40} className="text-blue-600" />
+                <FiLinkedin className="text-blue-600" />
               </a>
               <a href="https://github.com/liteljaime" target="_blank" rel="noreferrer">
-                <FiGithub size={40} className="text-black" />
+                <FiGithub className="text-black" />
               </a>
             </IconContext.Provider>
           </div>
