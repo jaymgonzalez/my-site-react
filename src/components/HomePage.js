@@ -17,10 +17,10 @@ const HomePage = () => {
           Hi 🙋🏽‍♂️ I am Jay, I build experiences for the web.
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          I've been working in the digital sector since 2013 when I built my first website. I have also created a ton of AB tests and analytics implementations.
+          I've been working in the digital teams since 2013 when I built my first website. I have also created a ton of AB tests and analytics implementations.
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          Now I do Front End development with React and Tailwind. I'm also learning Back End with Express and MongoDB.
+          Now, I help clients integrate with SaaS solutions. I'm also interested in Software Infrastructure, Networks, Cloud and DevOps.
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:pt-4">
           Bellow are a few examples of my work and ways to contact.
