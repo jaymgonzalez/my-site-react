@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import ListCardComponent from './ListCardComponent'
 import { projects } from '../data/projects-data.json'
 import ContactPage from './ContactPage'
@@ -14,16 +15,24 @@ const HomePage = () => {
       </div>
       <div className="text-gray-800 m-auto max-w-screen-sm sm:py-10">
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          Hi 🙋🏽‍♂️ I am Jay, I build experiences for the web.
+          Hi 🙋🏽‍♂️ I am Jay, I build web stuff.
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          I've been working in the digital teams since 2013 when I built my first website. I have also created a ton of AB tests and analytics implementations.
+          I've been working in the digital space since 2013 when I built my first <a className='font-extrabold' target='_blank' rel="noreferrer" href='https://agenciadowntown.com'>website</a>. I have also created a ton of AB tests and analytics implementations.
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          Now, I help clients integrate with SaaS solutions. I'm also interested in Software Infrastructure, Networks, Cloud and DevOps.
+          Then, I went on and help clients to configure and integrate marketing software. Now, I work as a DevOps engineer looking after infrastructure and automation. Apart from software, I'm interested in travelling ✈️ and investing💲
+          <br/>
+          Here is a <NavLink to={'/about'} className='font-extrabold'>link</NavLink> showcasing a bit of my personal story
+        </p>
+        <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
+          As per my technical skills, I code in Pyhotn and JavaScript as well as some Bash. The tools I use in a daily basis range from Ansible, Terraform, Jenkins, GIT, Docker, Kubernetes to AWS and OCI cloud providers. If you are curious, <NavLink to={'/cv'} className='font-extrabold'>check my CV</NavLink> 
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:pt-4">
-          Bellow are a few examples of my work and ways to contact.
+          Below are a few examples of my work, mainly front end, but there is some NodeJS and Docker as well. For the full list go <NavLink to={'/projects'} className='font-extrabold'>here.</NavLink>
+        </p>
+        <p className="font-bold sm:text-xl text-center m-10 sm:pt-4">
+          Feel free to contact me with any of the social media options at the bottom of the page or on the <NavLink to={'/contact'} className='font-extrabold'>contact page</NavLink>
         </p>
       </div>
       <div className="bg-divider-img h-40"></div>

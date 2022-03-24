@@ -26,7 +26,7 @@ const Header = () => {
     }
   }
 
-  const headerItems = ["projects", "contact", "about me", "blog", "cv"]
+  const headerItems = ["projects", "contact", "about me", "cv"]
 
 
   return (
