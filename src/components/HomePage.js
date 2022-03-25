@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-hero-img bg-green-500 w-full text-justify relative h-80 shadow-lg rounded-b-lg opacity-90">
-        <p className="select-none text-3xl sm:text-6xl text-center text-gray-50 py-28 tracking-tight font-extrabold">
+        <p className="select-none text-3xl sm:text-6xl text-center text-gray-50 py-28 tracking-tight font-extrabold text-shadow-lg">
           Welcome to my portfolio site
         </p>
       </div>
@@ -26,13 +26,13 @@ const HomePage = () => {
           Here is a <NavLink to={'/about'} className='font-extrabold'>link</NavLink> showcasing a bit of my personal story
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          As per my technical skills, I code in Pyhotn and JavaScript as well as some Bash. The tools I use in a daily basis range from Ansible, Terraform, Jenkins, GIT, Docker, Kubernetes to AWS and OCI cloud providers. If you are curious, <NavLink to={'/cv'} className='font-extrabold'>check my CV</NavLink> 
+          As per my technical skills, I code in Pyhotn and JavaScript as well as some Bash. The tools I use in a daily basis range from Ansible, Terraform, Jenkins, GIT to Docker, Kubernetes, AWS and other cloud providers. If you are curious, <NavLink to={'/cv'} className='font-extrabold'>check my CV</NavLink> 
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:pt-4">
           Below are a few examples of my work, mainly front end, but there is some NodeJS and Docker as well. For the full list go <NavLink to={'/projects'} className='font-extrabold'>here.</NavLink>
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:pt-4">
-          Feel free to contact me with any of the social media options at the bottom of the page or on the <NavLink to={'/contact'} className='font-extrabold'>contact page</NavLink>
+          Feel free to contact me with any of the social media options at the bottom or on the <NavLink to={'/contact'} className='font-extrabold'>contact page</NavLink>
         </p>
       </div>
       <div className="bg-divider-img h-40"></div>
