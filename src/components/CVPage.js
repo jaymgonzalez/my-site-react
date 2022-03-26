@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../img/JMG.webp'
+import img from '../img/JMG-CV.png'
 
 const CVPage = () => {
   return (
