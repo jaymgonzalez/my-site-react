@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Course Look Up App",
-      "github_link": "https://github.com/liteljaime/course-lookup-app",
+      "github_link": "https://github.com/jaymgonzalez/course-lookup-app",
       "project_link": "https://course-app.jaymgonzalez.com",
       "author": "Jay M Gonzalez",
       "description": "This app displays all the courses that I have completed recently. Within the app you can CRUD the courses that will affect the BD temporarily. It uses a json-server backend deployed in Heroku that will relaod every so often to the original data deployed.",
@@ -14,7 +14,7 @@
     },
     {
       "title": "Containerize a React App",
-      "github_link": "https://github.com/liteljaime/course-lookup-app",
+      "github_link": "https://github.com/jaymgonzalez/course-lookup-app",
       "project_link": "",
       "author": "Jay M Gonzalez",
       "description": "I created this project to go with the article I wrote about 'How to Containerize a React App with docker-compose' and let people use the files in the project or use them as a boiler plate to create their next app with React and Docker.",
@@ -26,7 +26,7 @@
     },
     {
       "title": "Image Search App with Tailwind",
-      "github_link": "https://github.com/liteljaime/image-serach-tailwind",
+      "github_link": "https://github.com/jaymgonzalez/image-serach-tailwind",
       "project_link": "https://img-project.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
       "description": "Image search App that get information from pixabay API with a searching box that looks for keywords against tags at the main site where all the pictures are stored. The CSS framework used on this project is Tailwind.",
@@ -38,7 +38,7 @@
     },
     {
       "title": "Instagram like App with Firebase",
-      "github_link": "https://github.com/liteljaime/insta-fire-app",
+      "github_link": "https://github.com/jaymgonzalez/insta-fire-app",
       "project_link": "https://fireapp.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
       "description": "App similar to Instagram that I created with a Firebase backend where you can updaload your pictures. At the moment its open for everyone to try so if you go in you could upload any picture and it will get save for the next visits.",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Backend for courses look up app",
-      "github_link": "https://github.com/liteljaime/json-server-api-heroku",
+      "github_link": "https://github.com/jaymgonzalez/json-server-api-heroku",
       "project_link": "https://course-pluralsight-api.herokuapp.com/",
       "author": "Jay M Gonzalez",
       "description": "Backend to add information and functionality to the courses look up app where I deployed the DB in Heroku with the package json-server, this module is usually utilize to mock API behaviour but it can be deployed as proven in this project.",
@@ -74,7 +74,7 @@
     },
     {
       "title": "Pokemon Memory Game",
-      "github_link": "https://github.com/liteljaime/pokemon-memory-game",
+      "github_link": "https://github.com/jaymgonzalez/pokemon-memory-game",
       "project_link": "https://pokemon.jaymgonzalez.com/",
       "author": "Jay M Gonzalez",
       "description": "Little memory game I created resembling Pokemon balls.",
@@ -86,7 +86,7 @@
     },
     {
       "title": "LinkedIn Bot",
-      "github_link": "https://github.com/liteljaime/linkedin-bot",
+      "github_link": "https://github.com/jaymgonzalez/linkedin-bot",
       "project_link": "",
       "author": "Jay M Gonzalez",
       "description": "Project where I developed a script to make automatic connection request and write a message like a human would do to make it less detectable for anti bots on the linkedIn search connection page",
@@ -98,7 +98,7 @@
     },
     {
       "title": "Landing page for QR menu",
-      "github_link": "https://github.com/liteljaime/restaurant-covid-menu",
+      "github_link": "https://github.com/jaymgonzalez/restaurant-covid-menu",
       "project_link": "https://landing.jaymgonzalez.com",
       "author": "Jay M Gonzalez",
       "description": "Landing page created to test the viability of a business idea. Create menus for restaurants and accept payments to reduce human interaction during covid pandemic",

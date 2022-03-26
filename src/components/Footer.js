@@ -21,7 +21,7 @@ const Footer = () => {
               <a href="http://www.linkedin.com/in/jay-m-gonzalez-7587ab43" target="_blank" rel="noreferrer">
                 <FiLinkedin className="text-blue-600" />
               </a>
-              <a href="https://github.com/liteljaime" target="_blank" rel="noreferrer">
+              <a href="https://github.com/jaymgonzalez" target="_blank" rel="noreferrer">
                 <FiGithub className="text-black" />
               </a>
             </IconContext.Provider>
