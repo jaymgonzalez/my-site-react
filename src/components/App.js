@@ -8,6 +8,7 @@ import TutorialsPage from './TutorialsPage'
 import NotFoundPage from './NotFoundPage'
 import Footer from './Footer'
 import CVPage from './CVPage'
+import ScrollToTop from './bin/ScrollToTop'
 
 
 function App() {
@@ -15,18 +16,20 @@ function App() {
     <div className="max-w-screen-xl mx-auto">
 
       <Header />
-      <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/projects" component={TutorialsPage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/blog" component={() => {
-          window.open('https://theselive.com', '_blank')
-          return null
-        }} />
-        <Route path="/cv" component={CVPage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/projects" component={TutorialsPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/contact" component={ContactPage} />
+          <Route path="/blog" component={() => {
+            window.open('https://theselive.com', '_blank')
+            return null
+          }} />
+          <Route path="/cv" component={CVPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+      </ScrollToTop>
       <Footer />
     </div>
   )
