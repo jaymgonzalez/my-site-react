@@ -31,6 +31,7 @@ function App() {
         </Switch>
       </ScrollToTop>
       <Footer />
+      
     </div>
   )
 }
