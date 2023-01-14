@@ -86,18 +86,28 @@
       "content": "content about this item'"
     },
     {
-      "title": "Published my first article",
+      "title": "Published my first blog article",
       "year": 2020,
       "content": "content about this item'"
     },
     {
-      "title": "Got my first DevOps role",
+      "title": "First DevOps engineer role",
       "year": 2021,
       "content": "content about this item'"
     },
     {
-      "title": "More amazings things to come",
+      "title": "Deployed my first smart contract",
       "year": 2022,
+      "content": "content about this item'"
+    },
+    {
+      "title": "First Blockchain engineer role 🙏🏽",
+      "year": 2023,
+      "content": "content about this item'"
+    },
+    {
+      "title": "More amazings things to come",
+      "year": 2024,
       "content": "content about this item'"
     }
   ]
