@@ -9,36 +9,128 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-hero-img bg-green-500 w-full text-justify relative h-80 shadow-lg rounded-b-lg opacity-90">
-        <p className="select-none text-3xl sm:text-6xl text-center text-gray-50 py-28 tracking-tight font-extrabold text-shadow-lg">
+        <p className="select-none text-5xl sm:text-6xl text-center text-gray-50 pt-16 pb-8 tracking-tight font-extrabold text-shadow-lg">
           Welcome to my portfolio site
+        </p>
+        <p className="select-none text-sm sm:text-xl text-center text-gray-50 tracking-tight font-extrabold text-shadow-lg max-w-md mx-auto px-8 sm:px-0">
+          Here you will find a curated selection of past projects, my
+          professional CV, various ways to contact, and some interesting facts
+          about me.
         </p>
       </div>
       <div className="text-gray-800 m-auto max-w-screen-sm sm:py-10">
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          Hi 🙋🏽‍♂️ I am Jay, I build web stuff.
+          Hi 🙋🏽‍♂️ I am Jay, I build Web3 stuff.
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          I've been working in the digital space since 2013 when I built my first <a className='font-extrabold' target='_blank' rel="noreferrer" href='https://agenciadowntown.com'>website</a>. I have also created a ton of AB tests and analytics implementations.
+          I've been working in the digital space since 2013 when I built my
+          first{' '}
+          <a
+            className="font-extrabold"
+            target="_blank"
+            rel="noreferrer"
+            href="https://agenciadowntown.com"
+          >
+            website
+          </a>
+          . I have also created a ton of AB tests and analytics implementations.
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          Then, I went on and help clients to configure and integrate marketing software. Now, I work as a DevOps engineer looking after infrastructure and automation. Apart from software, I'm interested in travelling ✈️ and investing💲
-          <br/>
-          Here is a <NavLink to={'/about'} className='font-extrabold'>link</NavLink> showcasing a bit of my personal story
+          I then transitioned into the SaaS industry, where I held positions as
+          a Front-End SE and a DevOps engineer. These roles allowed me to
+          develop a user-centered approach to software development, while also
+          gaining valuable technical knowledge and expertise I needed as a
+          self-taught engineer.
+          <br />
+          {/* Here is a{' '}
+          <NavLink to={'/about'} className="font-extrabold">
+            link
+          </NavLink>{' '}
+          showcasing a bit of my personal story */}
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
-          As per my technical skills, I code in Pyhotn and JavaScript as well as some Bash. The tools I use in a daily basis range from Ansible, Terraform, Jenkins, GIT to Docker, Kubernetes, AWS and other cloud providers. If you are curious, <NavLink to={'/cv'} className='font-extrabold'>check my CV</NavLink> 
+          Currently, my primary focus is on Web3 and Blockchain technology. I
+          have been actively working on a project called{' '}
+          <a
+            className="font-extrabold"
+            target="_blank"
+            rel="noreferrer"
+            href="https://generatenfts.xyz"
+          >
+            GENERATENFTS.XYZ
+          </a>{' '}
+          since the end of 2022. The platform, built from scratch, enables users
+          to upload images and receive NFTs directly into their wallets. My
+          responsibilities include thinking about app architecture and
+          infrastructure, developing smart contracts, building frontend and
+          backend, and utilizing IPFS for decentralized data storage.
+        </p>
+        <p className="font-bold sm:text-xl text-center m-10 sm:py-4">
+          In terms of my technical expertise in Web3, I have experience in
+          writing smart contracts using Solidity. I have completed the Ethereum
+          Bootcamp by Alchemy University, and have developed applications
+          primarily using Hardhat and Ethers.js. I created my own{' '}
+          <a
+            className="font-extrabold"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/jaymgonzalez/oci-crypto-devs"
+          >
+            ERC20 Token
+          </a>
+          ,{' '}
+          <a
+            className="font-extrabold"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/jaymgonzalez/dao-crypto-devs"
+          >
+            DAO Contract
+          </a>
+          ,{' '}
+          <a
+            className="font-extrabold"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/jaymgonzalez/dex-crypto-devs"
+          >
+            DEX platform
+          </a>
+          , and a{' '}
+          <a
+            className="font-extrabold"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/jaymgonzalez/whale-tracker"
+          >
+            Crypto Traking Bot
+          </a>
+          . I have a solid understanding of the Ethereum Virtual Machine (EVM),
+          Merkle Trees, Patricia Tries, and Hashing functions. If you are
+          curious to know more,{' '}
+          <NavLink to={'/cv'} className="font-extrabold">
+            check my CV
+          </NavLink>
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:pt-4">
-          Below are a few examples of my work, mainly front end, but there is some NodeJS and Docker as well. For the full list go <NavLink to={'/projects'} className='font-extrabold'>here.</NavLink>
+          Below are a few examples of my web2 work, front end with JS and React,
+          backend with NodeJS and some Docker as well. For the full list go{' '}
+          <NavLink to={'/projects'} className="font-extrabold">
+            here.
+          </NavLink>
         </p>
         <p className="font-bold sm:text-xl text-center m-10 sm:pt-4">
-          Feel free to contact me with any of the social media options at the bottom or on the <NavLink to={'/contact'} className='font-extrabold'>contact page</NavLink>
+          Feel free to contact me with any of the social media options at the
+          bottom or on the{' '}
+          <NavLink to={'/contact'} className="font-extrabold">
+            contact page
+          </NavLink>
         </p>
       </div>
       <div className="bg-divider-img h-40"></div>
 
       <div className="max-w-screen-md mx-auto sm:py-10 grid sm:grid-cols-2 grid-cols-1 gap-4">
-        < ListCardComponent projects={projects.slice(0, 4)} />
+        <ListCardComponent projects={projects.slice(0, 4)} />
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +171,8 @@ const HomePage = () => {
           Contact Me
         </p>
         <p className="font-bold sm:text-xl content-center px-10 text-justify">
-          If you wan to get in touch, fill this form or send me a message in any of the social networks displayed in the footer. DM's are open.
+          If you wan to get in touch, fill this form or send me a message in any
+          of the social networks displayed in the footer. DM's are open.
         </p>
         <ContactPage />
       </div>
@@ -88,7 +181,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-
-
-
-
